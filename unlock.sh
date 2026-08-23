@@ -416,7 +416,7 @@ cat > "$CLIENT_SETTINGS_DIR/ClientAppSettings.json" << 'EOF'
   "DFIntSignalRCoreNetworkHandler": "1",
   "DFIntRakNetMtuValue3InBytes": "1100",
   "DFIntRakNetNakResendDelayMsMax": "1",
-  "DFIntTaskSchedulerTargetFps": "100067",
+  "DFIntTaskSchedulerTargetFps": "1000",
   "DFIntHttpRbxApiMaxSyncRetries": "30",
   "DFIntUnstickForceDecayInTenths": "1",
   "DFIntServerFramesBetweenJoins": "1",
@@ -792,7 +792,7 @@ cat > "$CLIENT_SETTINGS_DIR/ClientAppSettings.json" << 'EOF'
   "FFlagNextGenReplicatorEnabledRead": "True",
   "FFlagCAP1209EnableDataSharingUI4": "False",
   "FFlagAllowSurfaceSelectionJumping": "True",
-  "FFlagDebugGraphicsPreferD3D11FL10": "False",
+  "FFlagDebugGraphicsPreferD3D11FL10": "True",
   "FFlagEnableBetaFacialAnimation2": "False",
   "FFlagFixScreenGuiUIScaleClipping": "True",
   "FFlagUserDisableTextureStreaming": "True",
@@ -870,7 +870,7 @@ cat > "$CLIENT_SETTINGS_DIR/ClientAppSettings.json" << 'EOF'
   "FFlagRemoveLegacyScriptSignal": "False",
   "FFlagEnableBetaBadgeLearnMore": "False",
   "FFlagLuaAppSponsoredGridTiles": "False",
-  "FFlagDebugGraphicsPreferOpenGL": "False",
+  "FFlagDebugGraphicsPreferOpenGL": "True",
   "FFlagUserFixZoomClampingIssues": "True",
   "FFlagDebugCheckRenderThreading": "True",
   "FFlagControlBetaBadgeWithGuac": "False",
@@ -886,7 +886,7 @@ cat > "$CLIENT_SETTINGS_DIR/ClientAppSettings.json" << 'EOF'
   "FFlagNetworkDisableTcpNoDelay": "False",
   "FFlagErrorPromptResizesHeight": "False",
   "FFlagEnableMenuControlsABTest": "False",
-  "FFlagDebugGraphicsPreferVulkan": "False",
+  "FFlagDebugGraphicsPreferVulkan": "True",
   "FFlagEnableRecordingDetection": "False",
   "FFlagDebugForceDisableShadows": "True",
   "FFlagUserShouldClipInGameChat": "True",
@@ -906,7 +906,7 @@ cat > "$CLIENT_SETTINGS_DIR/ClientAppSettings.json" << 'EOF'
   "FFlagEnableTerrainDecoration": "False",
   "FFlagLuaAppExitModalDoNotShow": "True",
   "FFlagNullCheckCloudsRendering": "True",
-  "FFlagDebugGraphicsPreferD3D11": "False",
+  "FFlagDebugGraphicsPreferD3D11": "True",
   "FFlagStudioUseRoslynCodeFixes": "True",
   "FFlagRenderReduceInputLatency": "True",
   "FFlagQuaternionPoseCorrection": "True",
@@ -1312,8 +1312,8 @@ cat > "$CLIENT_SETTINGS_DIR/ClientAppSettings.json" << 'EOF'
   "SFFlagPerformanceTelemetrySketchK": "False",
   "SFFlagRobloxGuiBlurIntensity": "0",
   "SFFlagOpenXrASW": "True"
-  }
+}
 EOF
 
-echo "FPS unlock applied to $ROBLOX_PATH"
+echo "FPS Unlock applied to $ROBLOX_PATH"
 echo "Restart Roblox for changes to take effect."
