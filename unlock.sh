@@ -1,3 +1,19 @@
+#!/bin/sh
+
+ROBLOX_PATH="/Applications/Roblox.app"
+
+if [ ! -d "$ROBLOX_PATH" ]; then
+  ROBLOX_PATH="$HOME/Applications/Roblox.app"
+  if [ ! -d "$ROBLOX_PATH" ]; then
+    echo "Error: Roblox installation not found."
+    exit 1
+  fi
+fi
+
+CLIENT_SETTINGS_DIR="$ROBLOX_PATH/Contents/MacOS/ClientSettings"
+mkdir -p "$CLIENT_SETTINGS_DIR"
+
+cat > "$CLIENT_SETTINGS_DIR/ClientAppSettings.json" << 'EOF'
 {
   "DFFlagClientLightingTechnologyChangedTelemetryTrackTimeSpent": "False",
   "DFFlagAvatarChatTelemetryAddTrackingTimeToSessionTracking2": "False",
@@ -1296,4 +1312,8 @@
   "SFFlagPerformanceTelemetrySketchK": "False",
   "SFFlagRobloxGuiBlurIntensity": "0",
   "SFFlagOpenXrASW": "True"
-}
+  }
+EOF
+
+echo "FPS unlock applied to $ROBLOX_PATH"
+echo "Restart Roblox for changes to take effect."
