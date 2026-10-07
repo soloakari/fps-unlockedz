@@ -15,7 +15,7 @@ mkdir -p "$CLIENT_SETTINGS_DIR"
 
 cat > "$CLIENT_SETTINGS_DIR/ClientAppSettings.json" << 'EOF'
 {
- "DFFlagDebugPauseVoxelizer": "False",
+  "DFFlagDebugPauseVoxelizer": "False",
   "DFFlagDisableDPIScale": "True",
   "DFFlagTextureQualityOverrideEnabled": "True",
   "DFIntCSGLevelOfDetailSwitchingDistance": "0",
@@ -34,9 +34,9 @@ cat > "$CLIENT_SETTINGS_DIR/ClientAppSettings.json" << 'EOF'
   "FIntFRMMinGrassDistance": "0",
   "FIntGrassMovementReducedMotionFactor": "0",
   "DFIntTaskSchedulerTargetFps": "240",
-  "FFlagTaskSchedulerLimitTargetFpsTo2402": "True"
+  "FFlagTaskSchedulerLimitTargetFpsTo2402": "True",
   "DFIntNetworkPrediction": "120",
-  "DFIntServerTickRate": "60",
+  "DFIntServerTickRate": "60"
 }
 EOF
 
