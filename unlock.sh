@@ -35,6 +35,8 @@ cat > "$CLIENT_SETTINGS_DIR/ClientAppSettings.json" << 'EOF'
   "FIntGrassMovementReducedMotionFactor": 0,
   "DFIntTaskSchedulerTargetFps": 999,
   "FFlagTaskSchedulerLimitTargetFpsTo2402": "False"
+  "DFIntNetworkPrediction": "120",
+  "DFIntServerTickRate": "60",
 }
 EOF
 
