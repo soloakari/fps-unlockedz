@@ -33,7 +33,7 @@ cat > "$CLIENT_SETTINGS_DIR/ClientAppSettings.json" << 'EOF'
   "FIntFRMMaxGrassDistance": "0",
   "FIntFRMMinGrassDistance": "0",
   "FIntGrassMovementReducedMotionFactor": "0",
-  "DFIntTaskSchedulerTargetFps": "999",
+  "DFIntTaskSchedulerTargetFps": "240",
   "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
 }
 EOF
